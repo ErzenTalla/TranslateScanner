@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,15 @@
 		E51E35A4272B48960093B6AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E51E35A2272B48960093B6AB /* Main.storyboard */; };
 		E51E35A6272B48970093B6AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E51E35A5272B48970093B6AB /* Assets.xcassets */; };
 		E51E35A9272B48970093B6AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E51E35A7272B48970093B6AB /* LaunchScreen.storyboard */; };
+		E543B0638ABD8B119ACE45CF /* Pods_TranslateScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01B1BA5BC3A218B19038D75 /* Pods_TranslateScanner.framework */; };
+		E5473AF7272DC17200608DF9 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5473AF6272DC17200608DF9 /* TranslateViewController.swift */; };
+		E5CA210D272C9DB40073435E /* HelpCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CA210C272C9DB40073435E /* HelpCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		079A19CD3D6E658FC631FC0F /* Pods-TranslateScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslateScanner.debug.xcconfig"; path = "Target Support Files/Pods-TranslateScanner/Pods-TranslateScanner.debug.xcconfig"; sourceTree = "<group>"; };
+		9A1FC828F747D3617D42C50F /* Pods-TranslateScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslateScanner.release.xcconfig"; path = "Target Support Files/Pods-TranslateScanner/Pods-TranslateScanner.release.xcconfig"; sourceTree = "<group>"; };
+		A01B1BA5BC3A218B19038D75 /* Pods_TranslateScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TranslateScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51E3599272B48960093B6AB /* TranslateScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslateScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51E359C272B48960093B6AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E51E359E272B48960093B6AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		E51E35A5272B48970093B6AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E51E35A8272B48970093B6AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E51E35AA272B48970093B6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5473AF6272DC17200608DF9 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		E5CA210C272C9DB40073435E /* HelpCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E543B0638ABD8B119ACE45CF /* Pods_TranslateScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		569A959B6FAF2D6C3BF72009 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A01B1BA5BC3A218B19038D75 /* Pods_TranslateScanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97FE0995CE4EEF87CCC14768 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				079A19CD3D6E658FC631FC0F /* Pods-TranslateScanner.debug.xcconfig */,
+				9A1FC828F747D3617D42C50F /* Pods-TranslateScanner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E51E3590272B48960093B6AB = {
 			isa = PBXGroup;
 			children = (
 				E51E359B272B48960093B6AB /* TranslateScanner */,
 				E51E359A272B48960093B6AB /* Products */,
+				97FE0995CE4EEF87CCC14768 /* Pods */,
+				569A959B6FAF2D6C3BF72009 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,10 +87,12 @@
 				E51E359C272B48960093B6AB /* AppDelegate.swift */,
 				E51E359E272B48960093B6AB /* SceneDelegate.swift */,
 				E51E35A0272B48960093B6AB /* ViewController.swift */,
+				E5473AF6272DC17200608DF9 /* TranslateViewController.swift */,
 				E51E35A2272B48960093B6AB /* Main.storyboard */,
 				E51E35A5272B48970093B6AB /* Assets.xcassets */,
 				E51E35A7272B48970093B6AB /* LaunchScreen.storyboard */,
 				E51E35AA272B48970093B6AB /* Info.plist */,
+				E5CA210C272C9DB40073435E /* HelpCode.swift */,
 			);
 			path = TranslateScanner;
 			sourceTree = "<group>";
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E51E35AD272B48970093B6AB /* Build configuration list for PBXNativeTarget "TranslateScanner" */;
 			buildPhases = (
+				11AA0C3D3F9444B3552995CE /* [CP] Check Pods Manifest.lock */,
 				E51E3595272B48960093B6AB /* Sources */,
 				E51E3596272B48960093B6AB /* Frameworks */,
 				E51E3597272B48960093B6AB /* Resources */,
+				C371BB27ED623171F061E55A /* [CP] Embed Pods Frameworks */,
+				637C9B24A3DB158C239E09FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +165,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11AA0C3D3F9444B3552995CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TranslateScanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		637C9B24A3DB158C239E09FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TranslateScanner/Pods-TranslateScanner-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TranslateScanner/Pods-TranslateScanner-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TranslateScanner/Pods-TranslateScanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C371BB27ED623171F061E55A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TranslateScanner/Pods-TranslateScanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TranslateScanner/Pods-TranslateScanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TranslateScanner/Pods-TranslateScanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E51E3595272B48960093B6AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E51E35A1272B48960093B6AB /* ViewController.swift in Sources */,
+				E5473AF7272DC17200608DF9 /* TranslateViewController.swift in Sources */,
+				E5CA210D272C9DB40073435E /* HelpCode.swift in Sources */,
 				E51E359D272B48960093B6AB /* AppDelegate.swift in Sources */,
 				E51E359F272B48960093B6AB /* SceneDelegate.swift in Sources */,
 			);
@@ -283,9 +377,11 @@
 		};
 		E51E35AE272B48970093B6AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 079A19CD3D6E658FC631FC0F /* Pods-TranslateScanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q2Y8G759LA;
 				INFOPLIST_FILE = TranslateScanner/Info.plist;
@@ -295,6 +391,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.TallaCompany.TranslateScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,9 +399,11 @@
 		};
 		E51E35AF272B48970093B6AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A1FC828F747D3617D42C50F /* Pods-TranslateScanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q2Y8G759LA;
 				INFOPLIST_FILE = TranslateScanner/Info.plist;
@@ -314,6 +413,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.TallaCompany.TranslateScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
